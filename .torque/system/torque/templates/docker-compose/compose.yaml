@@ -1,0 +1,8 @@
+version: "3.9"
+name: "{{deployment_name}}"
+networks:
+  default:
+    name: "{{deployment_name}}"
+services: {}
+volumes: {}
+configs: {}

@@ -1,0 +1,16 @@
+image: "{{image_name}}"
+restart: "unless-stopped"
+environment:
+  PGDATA: "/data"
+  POSTGRES_DB: "postgres"
+  POSTGRES_USER: "postgres"
+  POSTGRES_PASSWORD: "{{password}}"
+volumes:
+  - type: "volume"
+    source: "{{component_name}}"
+    target:  "/data"
+healthcheck:
+  "test": "pg_isready -U postgres"
+  "interval": "10s"
+  "timeout": "3s"
+  "retries": 3

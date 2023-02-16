@@ -1,0 +1,2 @@
+[torque]
+torque-hlb-component = torque.hlb:repository

@@ -1,0 +1,2 @@
+[torque]
+torque-do-domains-provider = torque.do_domains:repository

@@ -1,0 +1,2 @@
+[torque]
+torque-docker-compose-load-balancer-provider = torque.docker_compose_load_balancer:repository

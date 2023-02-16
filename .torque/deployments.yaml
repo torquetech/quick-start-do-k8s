@@ -1,0 +1,38 @@
+version: torquetech.io/v1
+deployments:
+  local-0wr4:
+    context:
+      type: torque.defaults.V1LocalContext
+      configuration: {}
+    strict: false
+    providers:
+    - torque.docker_compose.V1Provider
+    - torque.docker_compose_postgres.V1Provider
+    - torque.docker_compose_load_balancer.V1Provider
+    - torque.docker_compose_nginx_hlb.V1Provider
+    - torque.docker_compose_basics.V1Provider
+    extra_configuration:
+    - dc.yaml
+    filters: null
+    components: null
+  prod-i9se:
+    context:
+      type: torque.defaults.V1LocalContext
+      configuration: {}
+    strict: false
+    providers:
+    - torque.do.V1Provider
+    - torque.do_certificates.V1Provider
+    - torque.do_managed_k8s.V1Provider
+    - torque.do_managed_postgres.V1Provider
+    - torque.do_managed_container_registry.V1Provider
+    - torque.container_registry.V1Provider
+    - torque.k8s.V1Provider
+    - torque.k8s_do_volumes.V1Provider
+    - torque.k8s_load_balancer.V1Provider
+    - torque.k8s_do_nginx_hlb.V1Provider
+    - torque.k8s_basics.V1Provider
+    extra_configuration:
+    - do.yaml
+    filters: null
+    components: null

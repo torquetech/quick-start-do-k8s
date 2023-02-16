@@ -1,0 +1,2 @@
+[torque]
+torque-k8s-basics-provider = torque.k8s_basics:repository

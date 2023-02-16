@@ -1,0 +1,2 @@
+[torque]
+torque-do-managed-k8s-provider = torque.do_managed_k8s:repository

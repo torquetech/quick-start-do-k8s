@@ -1,0 +1,16 @@
+providers:
+  torque.docker_compose.V1Provider:
+    configuration:
+      overrides:
+        services:
+          lb-impl:
+            ports:
+            - 8080:80
+dag:
+  components:
+    lb:
+      bonds:
+        impl:
+          implementation: torque.docker_compose_nginx_hlb.V1Implementation
+          configuration:
+            domain: example.com

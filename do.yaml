@@ -1,0 +1,23 @@
+providers:
+  torque.k8s.V1Provider:
+    configuration:
+      quiet: false
+      overrides: {}
+  torque.do.V1Provider:
+    configuration:
+      region: nyc3
+      quiet: false
+      overrides: {}
+  torque.do_managed_container_registry.V1Provider:
+    configuration:
+      subscription_tier_slug: basic
+dag:
+  components:
+    lb:
+      bonds:
+        impl-cert:
+          implementation: torque.do_certificates.V1External
+          configuration:
+            domain: example.com
+            key_file: key.pem
+            certificate_file: cert.pem

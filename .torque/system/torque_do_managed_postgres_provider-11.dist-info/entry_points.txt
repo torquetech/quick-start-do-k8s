@@ -1,0 +1,2 @@
+[torque]
+torque-do-managed-postgres-provider = torque.do_managed_postgres:repository

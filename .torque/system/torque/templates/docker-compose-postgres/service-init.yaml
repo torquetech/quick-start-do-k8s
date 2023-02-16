@@ -1,0 +1,19 @@
+image: "{{image_name}}"
+labels:
+  sql_hash: "{{sql_hash}}"
+command: [
+  "psql",
+  "-h", "{{component_name}}",
+  "-U", "postgres",
+  "-f", "/init.sql",
+  "postgres"
+]
+restart: "no"
+environment: 
+  PGPASSWORD: "{{password}}"
+configs: 
+  - "source": "{{component_name}}"
+    "target": "/init.sql"
+depends_on:
+  "{{component_name}}":
+    condition: "service_healthy"

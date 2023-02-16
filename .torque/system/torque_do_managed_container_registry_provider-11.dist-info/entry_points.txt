@@ -1,0 +1,2 @@
+[torque]
+torque-do-managed-container-registry-provider = torque.do_managed_container_registry:repository

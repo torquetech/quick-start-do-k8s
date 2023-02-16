@@ -1,0 +1,74 @@
+version: torquetech.io/v1
+dag:
+  revision: 8
+  components:
+    backend-service:
+      type: torque.basics.V1HttpService
+      parameters:
+        path: backend-service
+        port: '80'
+        build:
+          command:
+          - docker
+          - build
+          - -t
+          - $IMAGE
+          - .
+        run: {}
+      labels: []
+    lb:
+      type: torque.hlb.V1Component
+      parameters: {}
+      labels: []
+    db:
+      type: torque.postgres.V1Component
+      parameters: {}
+      labels: []
+    backend-service2:
+      type: torque.basics.V1HttpService
+      parameters:
+        path: backend-service2
+        port: '80'
+        build:
+          command:
+          - docker
+          - build
+          - -t
+          - $IMAGE
+          - .
+        run: {}
+      labels: []
+  links:
+    link-bd23:
+      type: torque.postgres.V1EnvironmentLink
+      source: db
+      destination: backend-service
+      parameters:
+        database: example
+        user: test_user
+      labels: []
+    link-v3zw:
+      type: torque.basics.V1IngressLink
+      source: backend-service
+      destination: lb
+      parameters:
+        path: /backend-service
+        host: api
+      labels: []
+    link-w8bo:
+      type: torque.postgres.V1EnvironmentLink
+      source: db
+      destination: backend-service2
+      parameters:
+        database: example
+        user: test_user
+      labels: []
+    link-053d:
+      type: torque.basics.V1IngressLink
+      source: backend-service2
+      destination: lb
+      parameters:
+        path: /backend-service2
+        host: api
+      labels: []
+

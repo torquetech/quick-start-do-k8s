@@ -1,0 +1,2 @@
+[torque]
+torque-k8s-do-volumes-provider = torque.k8s_do_volumes:repository

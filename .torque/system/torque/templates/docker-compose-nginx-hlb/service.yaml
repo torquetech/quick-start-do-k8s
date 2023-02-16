@@ -1,0 +1,7 @@
+image: "nginx:latest"
+labels:
+  conf_hash: "{{conf_hash}}"
+restart: "unless-stopped"
+configs:
+  - source: "{{component_name}}"
+    target: "/etc/nginx/conf.d/ingress.conf"

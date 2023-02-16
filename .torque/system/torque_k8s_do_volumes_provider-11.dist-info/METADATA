@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: torque-k8s-do-volumes-provider
+Version: 11
+Home-page: https://github.com/torquetech/torque-k8s-do-volumes-provider
+Author: Torque Team
+Author-email: team@torque.cloud
+License: MPL v2.0
+Classifier: License :: OSI Approved :: Mozilla Public License 2.0 (MPL 2.0)
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: jinja2
+

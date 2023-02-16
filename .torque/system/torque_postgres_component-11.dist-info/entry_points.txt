@@ -1,0 +1,2 @@
+[torque]
+torque-postgres-component = torque.postgres:repository

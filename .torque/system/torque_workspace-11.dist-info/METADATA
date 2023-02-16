@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: torque-workspace
+Version: 11
+Home-page: https://github.com/torquetech/torque-workspace
+Author: Torque Team
+Author-email: team@torque.cloud
+License: MPL v2.0
+Classifier: License :: OSI Approved :: Mozilla Public License 2.0 (MPL 2.0)
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: pyyaml
+Requires-Dist: pydot
+Requires-Dist: pytrie
+Requires-Dist: schema
+
+# Torque Framework for Cloud System Management
+
+- [Monorepo](https://github.com/torquetech/torque-packages)
+- [Documentation](https://docs.torque.cloud)
+- [Website](https://torque.cloud)

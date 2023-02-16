@@ -1,0 +1,9 @@
+torque/k8s.py,sha256=TYzLOG8zLLZwxZ31uUIYVmmJnWUpeLb4Tc6Ro4BYsZQ,6556
+torque/k8slib.py,sha256=YZveJIzD7qn-Uf0QDZPlXK8BTE0kdo_-Myd6iUz4j5Q,3565
+torque_k8s_provider-11.dist-info/LICENSE,sha256=ZqMQfVrWoFiqt1PqrCBHzLLtDjlGXdD-WETaPjANUXI,16727
+torque_k8s_provider-11.dist-info/METADATA,sha256=PhRADKDSESoZCllUPXnftzgu_GKD40TgvD_mV9WxfY8,380
+torque_k8s_provider-11.dist-info/WHEEL,sha256=sfvOucoM39jEiiQULDd6nFi8AY8DmwHwYBWTkWscN-0,95
+torque_k8s_provider-11.dist-info/entry_points.txt,sha256=53FJgoY-9Ki7k1x-RfkPFK0QI6lvk6eOre94NDLf2o4,53
+torque_k8s_provider-11.dist-info/top_level.txt,sha256=ybnrmlDPf1hnnPMociaeb0tB9PixD4CPZJRIjefDC9I,7
+torque_k8s_provider-11.dist-info/RECORD,,
+torque_k8s_provider-11.dist-info/direct_url.json,,

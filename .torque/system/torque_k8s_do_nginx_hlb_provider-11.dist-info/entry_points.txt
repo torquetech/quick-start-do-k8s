@@ -1,0 +1,2 @@
+[torque]
+torque-k8s-do-nginx-hlb-provider = torque.k8s_do_nginx_hlb:repository

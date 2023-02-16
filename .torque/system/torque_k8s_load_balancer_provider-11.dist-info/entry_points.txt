@@ -1,0 +1,2 @@
+[torque]
+torque-k8s-load-balancer-provider = torque.k8s_load_balancer:repository

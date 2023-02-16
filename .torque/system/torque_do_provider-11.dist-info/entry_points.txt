@@ -1,0 +1,2 @@
+[torque]
+torque-do-provider = torque.do:repository

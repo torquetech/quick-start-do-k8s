@@ -1,0 +1,2 @@
+[torque]
+torque-docker-compose-basics-provider = torque.docker_compose_basics:repository

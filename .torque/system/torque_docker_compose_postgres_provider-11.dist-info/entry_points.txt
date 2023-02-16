@@ -1,0 +1,2 @@
+[torque]
+torque-docker-compose-postgres-provider = torque.docker_compose_postgres:repository
